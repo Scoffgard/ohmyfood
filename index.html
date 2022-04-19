@@ -1,11 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://kit.fontawesome.com/1639721bff.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <iframe id="header" src="./components/header.html"></iframe>
+    <main>
+        <div class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Paris, Belleville</span>
+        </div>
+        <section class="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <a href="#restaurants">Explorer nos restaurants</a>
+        </section>
+        <section class="explanation">
+            <h1>Fonctionnement</h1>
+            <div class="card">
+                <h2>1</h2>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Choisissez un restaurant</h3>
+            </div>
+
+            <div class="card">
+                <h2>2</h2>
+                <i class="fa-solid fa-list"></i>
+                <h3>Composez votre menu</h3>
+            </div>
+
+            <div class="card accent">
+                <h2>3</h2>
+                <i class="fa-solid fa-store"></i>
+                <h3>Dégustez au restaurant</h3>
+            </div>
+        </section>
+        <section class="restaurants" id="restaurants">
+            <h1>Restaurants</h1>
+            <div class="card">
+                <span class="new">Nouveau</span>
+                <div class="image-container">
+                    <img src="./assets/restaurants/1.jpg" alt="image de la palette du gout" />
+                </div>
+                <div class="info-container">
+                    <div class="infos">
+                        <h2>La palette du goût</h2>
+                        <h3>Ménilmontant</h3>
+                    </div>
+                    <input type="checkbox" id="1" />
+                    <label for="1">
+                        <img src="./assets/icons/heart.svg" alt="heart" />
+                    </label>
+                </div>
+            </div>
+            <div class="card">
+                <span class="new">Nouveau</span>
+                <div class="image-container">
+                    <img src="./assets/restaurants/2.jpg" alt="image de la note enchantée" />
+                </div>
+                <div class="info-container">
+                    <div class="infos">
+                        <h2>La note echantée</h2>
+                        <h3>Charonne</h3>
+                    </div>
+                    <input type="checkbox" id="2" />
+                    <label for="2">
+                        <img src="./assets/icons/heart.svg" alt="heart" />
+                    </label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="./assets/restaurants/3.jpg" alt="image d'à la française" />
+                </div>
+                <div class="info-container">
+                    <div class="infos">
+                        <h2>À la française</h2>
+                        <h3>Cité rouge</h3>
+                    </div>
+                    <input type="checkbox" id="3" />
+                    <label for="3">
+                        <img src="./assets/icons/heart.svg" alt="heart" />
+                    </label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="./assets/restaurants/4.jpg" alt="image du délice des sens" />
+                </div>
+                <div class="info-container">
+                    <div class="infos">
+                        <h2>Le délice des sens</h2>
+                        <h3>Folie-Méricourt</h3>
+                    </div>
+                    <input type="checkbox" id="4" />
+                    <label for="4">
+                        <img src="./assets/icons/heart.svg" alt="heart" />
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <iframe id="footer" src="./components/footer.html"></iframe>
 </body>
 </html>

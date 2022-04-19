@@ -1,0 +1,164 @@
+.city {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    background-color: #ebebeb;
+    color: #3b3b3b;
+    font-weight: 500;
+}
+
+.city * {
+    margin: 0 5px;
+}
+
+
+
+.presentation {
+    background-color: var(--back);
+    padding: 50px;
+    text-align: center;
+}
+
+.presentation h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.presentation h2 {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.presentation a {
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px -10px black;
+}
+
+
+
+.explanation {
+    padding: 50px 30px;
+}
+
+.explanation h1 {
+    font-size: 1.5rem;
+}
+
+.explanation .card {
+    background-color: var(--back);
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    align-items: center;
+    border-radius: 20px;
+    margin: 30px 0 30px 10px;    
+    box-shadow: 2px 2px 20px -12.5px black;
+}
+
+.explanation .card h2 {
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.explanation .card i {
+    font-size: 1.5rem;
+    margin-right: 25px;
+    color: #a1a1a1;
+}
+
+.explanation .card.accent {
+    background-color: #f5edff;
+}
+
+.explanation .card.accent i {
+    color: var(--primary)
+}
+
+
+.restaurants {
+    padding: 50px 30px;
+    background-color: var(--back);
+}
+
+.restaurants h1 {
+    font-size: 1.5rem;
+}
+
+.restaurants .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 0 20px -12px black;
+}
+
+.restaurants .card .new {
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: calc(-1.2em - 15px);
+    top: 20px;
+    right: 20px;
+    background-color: #98e1cf;
+    color: #169475;
+    font-weight: 600;
+    padding: 7.5px 10px;
+}
+
+.restaurants .card .image-container img {
+    width: 100%;
+    height: 22.5vh;
+    object-fit: cover;
+}
+
+.restaurants .card .info-container {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 12.5px;
+    align-items: center;
+}
+
+.restaurants .card h2 {
+    font-size: 1.2rem;
+}
+
+.restaurants .card h3 {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.restaurants .card input[type=checkbox] {
+    display: none;
+}
+
+.restaurants .card label {
+    margin-left: auto;
+}
+
+.restaurants .card .info-container img {
+    width: 40px;
+    height: auto;
+}
+
+.restaurants .card input[type=checkbox]:checked + label img {
+    content: url(../assets/icons/heart_filled.png);
+}
