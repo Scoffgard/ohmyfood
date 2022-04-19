@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#back {
+    display: none;
+    position: absolute;
+    left: 20px;
+}
+
+#back:target {
+    display: block;
+}
+
+#back i {
+    font-size: 1.6rem;
+    color: black;
+}
+
+img {
+    width: 40%;
+}
