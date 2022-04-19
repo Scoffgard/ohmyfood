@@ -21,7 +21,7 @@ iframe#header {
     display: block;
     border: none;
     width: 100%;
-    height: 7vh;
+    height: 3.5em;
     box-shadow: 0 0 20px -10px black;
 }
 
@@ -29,6 +29,6 @@ iframe#header {
 iframe#footer {
     border: none;
     width: 100%;
-    height: 23vh;
+    height: 13em;
     display: block;
 }
