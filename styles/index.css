@@ -97,6 +97,11 @@
     background-color: var(--back);
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .restaurants h1 {
     font-size: 1.5rem;
 }
