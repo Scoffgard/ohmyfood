@@ -47,7 +47,14 @@ main {
     padding: 20px;
     border-radius: 50px;
     box-shadow: 2px 2px 20px -10px black;
+    transition: 0.3s ease;
 }
+
+.presentation a:hover {
+    background-image: linear-gradient(to right bottom, #ffa4e6, #ec96e3, #d689e0, #be7dde, #a373dc);
+    box-shadow: 2px 2px 20px -7.5px black;
+}
+
 
 
 
