@@ -4,6 +4,55 @@ main {
     flex-wrap: wrap;
 }
 
+@keyframes loading {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: calc(100% - 10vw);
+    }
+}
+
+@keyframes show-loading {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 10;
+    animation: show-loading .3s linear 2s 1 forwards;
+}
+
+.spinner-container {
+    display: flex;
+    height: 5px;
+    width: 60vw;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.spinner {
+    width: 10vw;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 50%, rgba(147,86,220,1) 100%);
+    animation: loading .7s ease-in-out infinite alternate ;
+}
+
 .city {
     display: flex;
     flex-direction: row;
