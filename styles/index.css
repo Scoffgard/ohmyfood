@@ -24,6 +24,38 @@ main {
     }
 }
 
+@keyframes like {
+    from {
+        content: '';
+        transform: scale(100%);
+    } 
+
+    50% {
+        transform: scale(10%);
+    }
+
+    to {
+        content: url(../assets/icons/heart_filled.png);
+        transform: scale(100%);
+    }
+}
+
+@keyframes like-reverse {
+    from {
+        content: url(../assets/icons/heart_filled.png);
+        transform: scale(100%);
+    } 
+
+    50% {
+        transform: scale(0%);
+    }
+
+    to {
+        content: '';
+        transform: scale(100%);
+    }
+}
+
 .loading-container {
     position: fixed;
     top: 0;
@@ -228,21 +260,19 @@ main {
     font-weight: 300;
 }
 
-.restaurants .card input[type=checkbox] {
-    display: none;
-}
-
-.restaurants .card label {
+.restaurants .card .info-container .like-container {
+    width: 40px;
+    height: 40px;
     margin-left: auto;
 }
 
 .restaurants .card .info-container img {
-    width: 40px;
-    height: auto;
+    width: 100%;
+    animation: like-reverse 1s ease-in-out forwards;
 }
 
-.restaurants .card input[type=checkbox]:checked + label img {
-    content: url(../assets/icons/heart_filled.png);
+.restaurants .card .info-container .like-container:hover img {
+    animation: like 1s ease-in-out forwards;
 }
 
 @media screen and (orientation: landscape) {
