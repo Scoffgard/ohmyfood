@@ -12,6 +12,38 @@
     }
 }
 
+@keyframes like {
+    from {
+        content: '';
+        transform: scale(100%);
+    } 
+
+    50% {
+        transform: scale(10%);
+    }
+
+    to {
+        content: url(../assets/icons/heart_filled.png);
+        transform: scale(100%);
+    }
+}
+
+@keyframes like-reverse {
+    from {
+        content: url(../assets/icons/heart_filled.png);
+        transform: scale(100%);
+    } 
+
+    50% {
+        transform: scale(0%);
+    }
+
+    to {
+        content: '';
+        transform: scale(100%);
+    }
+}
+
 .illustration {
     width: 100%;
     height: 40vh;
@@ -40,21 +72,20 @@
     font-size: 2rem;
 }
 
-.header input[type=checkbox] {
-    display: none;
-}
-
-.header label {
+.header .like-container {
     margin-left: auto;
+    width: 40px;
+    height: 40px;
 }
 
 .header img {
-    width: 40px;
+    width: 100%;
     height: auto;
+    animation: like-reverse 1s ease-in-out forwards;
 }
 
-.header input[type=checkbox]:checked + label img {
-    content: url(../assets/icons/heart_filled.png);
+.header .like-container:hover img {
+    animation: like 1s ease-in-out forwards;
 }
 
 .categories {
@@ -85,11 +116,7 @@
     margin-bottom: 5px;
 }
 
-.categorie input[type=checkbox] {
-    display: none;
-}
-
-.categorie label {
+.categorie .menu-element {
     animation: fadein 2s;
     display: flex;
     flex-direction: row;
@@ -161,11 +188,11 @@
     align-self: center;
     text-align: center;
     transform: rotate(180deg);
-    transition: transform 0.3s 0.1s; 
+    transition: transform 0.4s 0.1s; 
 }
 
-.categorie input[type=checkbox]:checked + label .checked,
-.categorie input[type=checkbox]:checked + label .checked * {
+.categorie .menu-element:hover .checked,
+.categorie .menu-element:hover .checked * {
     transform: none;
     margin-left: 0;
 }
